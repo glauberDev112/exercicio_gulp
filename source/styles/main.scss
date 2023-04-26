@@ -1,0 +1,101 @@
+* {
+    font-family: 'Lora', serif;
+    font-family: 'Roboto Slab', serif;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    section {
+        overflow: hidden;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 33%;
+        max-width: 385px;
+        min-width: 300px;
+        max-height: 500px;
+        .label {
+            .label-feedback {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                * {
+                    display: flex;
+                    margin: 3px;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+                div {
+                    
+                    align-items: center;
+                    button {
+                        font-size: 1.3em;
+                    }
+                    border: 1px solid rgba(0, 0, 0, 0.253);
+                    height: 40px;
+                    padding: 0 3px;
+                    border-radius: 10px;
+                }
+            }
+            .score {
+                * {
+                    align-items: center;
+                }
+            }
+            div {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        & {
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        h2 {
+            font-size: 1.1em;
+            text-transform: capitalize;
+            width: 100%;
+            
+        }
+        img {
+            width: 100%;
+            max-height: 300px;
+            border-bottom: 3px double black;
+        }
+        .label {
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+    }
+}
+body {
+    header,footer {
+        width: 99%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 85, 255);
+        color: white;
+        border-radius: 15px;
+    }
+    footer {
+        bottom: 3px;
+    }
+    header {
+        top: 3px;
+    }
+}
